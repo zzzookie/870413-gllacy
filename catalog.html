@@ -25,16 +25,16 @@
         <span class="user-menu search" href="#" aria-haspopup="true">Поиск</span>
         <div class="popup-search">
           <form action="search.php" method="post">
-            <input type="text" name="search" id="search" value="Что ищем?">
+            <input type="text" name="search" id="search" placeholder="Что ищем?">
             <label class="visually-hidden" for="search">Поле поиска</label>
           </form>
         </div>
         <span class="user-menu login" href="#" aria-haspopup="true">Вход</span>
         <div class="popup-login">
           <form action="login.php" method="post">
-            <input type="text" name="login" value="Электронная почта" id="login">
+            <input type="text" name="login" placeholder="Электронная почта" id="login">
             <label class="visually-hidden" for="login">Электронная почта</label>
-            <input type="password" name="password" value="Пароль" id="password">
+            <input type="password" name="password" placeholder="Пароль" id="password">
             <label class="visually-hidden" for="password">Пароль</label>
             <button type="submit" name="submit" value="Войти">Войти</button>
             <div>
@@ -55,7 +55,9 @@
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог</a></li>
-      <li class="breadcrumbs-current">Сливочное</li>
+      <li class="breadcrumbs-current" aria-current="page">
+        <span class="visually-hidden">Текущий пункт</span>Сливочное
+      </li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
     <!-- Здесь будет фильтр товаров -->
