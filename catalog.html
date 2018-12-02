@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>Магазин мороженого Глейси — Каталог</title>
   </head>
+
   <body class="inner-page">
 	<header>
  		<nav class="main-navigation">
       <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
+
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
           <ul class="sub-menu">
@@ -23,6 +25,7 @@
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="price.html">О Компании</a></li>
       </ul>
+
       <div class="user-navigation">
         <span class="user-menu search" href="#" aria-haspopup="true">Поиск</span>
         <div class="popup-search">
@@ -45,7 +48,29 @@
             </div>
           </form>
         </div>
-        <span class="user-menu cart" href="#">Корзина</span>
+        <span class="user-menu cart cart-full" href="#" aria-haspopup="true">Корзина</span>
+
+        <div class="popup popup-cart">
+          <div class="cart-table">
+            <ul>
+              <li><button><img src="img/cross.svg"></button></li>
+              <li><a href="#"><img src="img/cart-item-01.jpg"></a></li>
+              <li><p>Пломбир с апельсиновым джемом</p></li>
+              <li><p>1,5 кг x <span class="kg-price">200 руб.</span></p></li>
+              <li><p>300 руб.</p></li>
+            </ul>
+            <ul>
+              <li><button><img src="img/cross.svg"></button></li>
+              <li><a href="#"><img src="img/cart-item-02.jpg"></a></li>
+              <li><p>Клубничный пломбир с присыпкой из белого шоколада</p></li>
+              <li><p>1,5 кг x <span class="kg-price">300 руб.</span></p></li>
+              <li><p>450 руб.</p></li>
+            </ul>
+          </div>
+          <p class="cart-amount">Итого: 750 руб.</p>
+          <a class="button" href="#">Оформить заказ</a>
+        </div>
+
       </div>
     </nav>
     <div class="header-contacts">
@@ -53,6 +78,7 @@
       <p class="header-contacts-phone">8 812 450-25-25</p>
     </div>
   </header>
+
   <main class="container">
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -62,7 +88,9 @@
       </li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
+    
     <!-- Здесь будет фильтр товаров -->
+
     <ul class="catalog">
       <li class="catalog-item">
         <h2 class="catalog-item-title">
@@ -170,9 +198,10 @@
       <li><a href="#">5</a></li>
       <li class="next-page">Следующая страница</li>
     </ul>
-
 	</main>
+
 	<footer>
+
 		<ul class="footer-social">
       <li class="social social-tw">
         <a href="https://twitter.com/gllacy" aria-label="Gllacy в Твиттере">Twitter</a>
@@ -187,15 +216,21 @@
         <a href="https://vk.com/gllacy" aria-label="Gllacy во Вконтакте">VK</a>
       </li>
     </ul>
+
 		<ul class="footer-links">
 			<li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
 			<li><a href="#">О производстве</a></li>
 			<li><a href="#">Наши документы</a></li>
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
+
 		<div class="copyright">
-			Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
+			<p>
+        Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
+      </p>
 		</div>
+
 	</footer>
+
   </body>
 </html>
