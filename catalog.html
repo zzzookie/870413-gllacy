@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>Магазин мороженого Глейси — Каталог</title>
   </head>
-  <body>
+  <body class="inner-page">
 	<header>
  		<nav class="main-navigation">
       <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
@@ -158,6 +160,17 @@
         <p class="catalog-item-price">420₽</p>
       </li>
     </ul>
+
+    <ul class="paginator">
+      <li class="paginator-inactive previous-page"><a href="#">Предыдущая страница</a></li>
+      <li class="current-page">1</li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li class="next-page">Следующая страница</li>
+    </ul>
+
 	</main>
 	<footer>
 		<ul class="footer-social">
@@ -174,11 +187,9 @@
         <a href="https://vk.com/gllacy" aria-label="Gllacy во Вконтакте">VK</a>
       </li>
     </ul>
-		<ul class="footer-links-column-1">
+		<ul class="footer-links">
 			<li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
 			<li><a href="#">О производстве</a></li>
-    </ul>
-    <ul class="footer-links-column-2">
 			<li><a href="#">Наши документы</a></li>
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>

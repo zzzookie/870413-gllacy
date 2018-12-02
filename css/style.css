@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/roboto.woff2");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/robotobold.woff2");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/robotomedium.woff2");
+	font-style: normal;
+	font-weight: 500;
+}
+
+body {
+	color: #ffffff;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	background-color: #849d8f;
+
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+input::placeholder {
+	color: #999999;
+}
+
+/* временное скрытие */
+.modal,
+.popup {
+	display: none;
+}
+
+.site-navigation a {
+	font-weight: bold;
+	border-bottom: 1px solid #9bb3a6;
+}
+
+.header-contacts-schedule {
+	font-weight: bold;	
+}
+
+.header-contacts-phone {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.advantages {
+	color: #323232;
+}
+
+.advantages-header {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.blog-header {
+	font-weight: 500;	
+}
+
+.blog h3 {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.subscription {
+	color: #5a5a5a;
+}
+
+footer a {
+	border-bottom: 1px solid #9bb3a6;
+}
+
+.footer-links {
+	font-size: 13px;
+}
+
+.footer-links-supplier {
+	font-weight: bold;
+}
+
+.copyright,
+.copyright a {
+	font-size: 12px;
+}

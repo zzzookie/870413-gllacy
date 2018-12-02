@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>Магазин мороженого Глейси — Главная</title>
   </head>
   <body>
@@ -23,14 +25,14 @@
       </ul>
       <div class="user-navigation">
         <span class="user-menu search" href="#" aria-haspopup="true">Поиск</span>
-        <div class="popup-search">
+        <div class="popup popup-search">
           <form action="search.php" method="post">
             <input type="text" name="search" id="search" placeholder="Что ищем?">
             <label class="visually-hidden" for="search">Поле поиска</label>
           </form>
         </div>
         <span class="user-menu login" href="#" aria-haspopup="true">Вход</span>
-        <div class="popup-login">
+        <div class="popup popup-login">
           <form action="login.php" method="post">
             <input type="text" name="login" placeholder="Электронная почта" id="login">
             <label class="visually-hidden" for="login">Электронная почта</label>
@@ -64,7 +66,7 @@
     </section>
     <article class="blog">
       <h2 class="blog-header">Новое в нашем блоге</h2>
-      <p class="blog-article">10 способов сервировки фруктовых щербетов к столу</p>
+      <h3 class="blog-article">10 способов сервировки фруктовых щербетов к столу</p>
     </article>
     <section class="subscription">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -92,11 +94,9 @@
         <a href="https://vk.com/gllacy" aria-label="Gllacy во Вконтакте">VK</a>
       </li>
     </ul>
-    <ul class="footer-links-column-1">
+    <ul class="footer-links">
       <li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
-    </ul>
-    <ul class="footer-links-column-2">
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
