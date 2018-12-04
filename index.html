@@ -44,7 +44,7 @@
             <label class="visually-hidden" for="login">Электронная почта</label>
             <input type="password" name="password" placeholder="Пароль" id="password">
             <label class="visually-hidden" for="password">Пароль</label>
-            <button type="submit" name="submit" value="Войти">Войти</button>
+            <button class="button" type="submit" name="submit" value="Войти">Войти</button>
             <div>
               <p><a class="login-href" href="#">Забыли пароль?</a></p>
               <p><a class="login-href" href="#">Новая регистрация</a></p>
@@ -67,6 +67,40 @@
     <h1 class="visually-hidden">Глейси - магазин мороженого</h1>
 
     <!-- Здесь будет витрина -->
+    <ul class="catalog">
+      <li class="catalog-item">
+        <h2 class="catalog-item-title">
+          <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </h2>
+        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-01.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
+        <p class="catalog-item-price">310₽<span class="catalog-item-unit">/кг</span></p>
+      </li>
+
+      <li class="catalog-item">
+        <h2 class="catalog-item-title">
+          <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
+        </h2>
+        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-02.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
+        <p class="catalog-item-price">380₽<span class="catalog-item-unit">/кг</span></p>
+      </li>
+
+      <li class="catalog-item">
+        <h2 class="catalog-item-title">
+          <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </h2>
+        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-03.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
+        <p class="catalog-item-price">355₽<span class="catalog-item-unit">/кг</span></p>
+      </li>
+
+      <li class="catalog-item">
+        <h2 class="catalog-item-title">
+          <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
+        </h2>
+        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+        <p class="catalog-item-price">415₽<span class="catalog-item-unit">/кг</span></p>
+      </li>
+    </ul>
+
 
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -88,11 +122,35 @@
       <form action="subscription.php" method="post">
         <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
         <label for="subscription-email">Электронная почта</label>
-        <button type="submit" name="subscription-submit" value="Отправить">Отправить</button>
+        <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
       </form>
     </section>
 
-      <!-- Карта -->
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/map.jpg" width="1200" height="430" alt="Карта проезда">
+      <div class="address-block">
+        <h3 class="map-address">
+          Адрес главного офиса<br>
+          и офлайн-магазина:
+        </h3>
+        <p сlass="map-address">
+          <strong><address>
+              ул. Большая Конюшенная 19/8, Санкт-Петербург
+          </address></strong>
+        </p>
+        <p class="map-phone">
+          Для заказов по телефону:
+        </p>
+        <p class="map-phone">
+          <strong>
+            8 812 450-25-25
+          </strong>
+        </p>
+        <p class="map-phone">(с 10 до 20 ежедневно)</p>
+        <button class="button">Форма обратной связи</button>
+      </div>
+    </section>
 
   </main>
 
@@ -131,7 +189,7 @@
       <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
       <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
       <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-      <button type="submit" name="feedback-submit" value="Отправить">Отправить</button>
+      <button class="button" type="submit" name="feedback-submit" value="Отправить">Отправить</button>
     </form>
     <a class="modal-close">Закрыть</span>
   </section>

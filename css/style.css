@@ -30,8 +30,8 @@ body {
 a {
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 16px;
-	font-family: "Roboto", sans-serif;
+	font-size: inherit;
+	font-family: inherit;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: rgba(255, 255, 255, 0.3);
@@ -81,7 +81,6 @@ input::placeholder {
 
 .site-navigation a {
 	font-weight: bold;
-	border-bottom: 1px solid #9bb3a6;
 }
 
 .site-navigation a:hover,
@@ -126,7 +125,7 @@ input::placeholder {
 .breadcrumbs li,
 .paginator li,
 .footer-social li {
-	display: inline;
+	display: inline-block;
 }
 
 .breadcrumbs a {
@@ -214,9 +213,6 @@ input::placeholder {
 
 
 
-footer a {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .footer-links {
 	font-size: 13px;
