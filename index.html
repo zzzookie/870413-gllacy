@@ -86,23 +86,32 @@
 
     <div class="specials">
       <article class="special banner raspberry">
-        <h2 class="special-header">Малинка даром!</h2>
-        <p class="special-text">
-          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-        </p>
-        <button class="button" name="raspberry-button" value="Хочу варенье!">
-          Хочу варенье!
-        </button>
+        <div class="special-wrapper">
+          <h2 class="special-header">Малинка даром!</h2>
+          <p class="special-text">
+            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="button" name="raspberry-button" value="Хочу варенье!">
+            Хочу варенье!
+          </button>
+        </div>
       </article>
 
       <article class="special banner chocolate">
-        <h2 class="special-header">Шоколадки даром!</h2>
-        <p class="special-text">
-          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-        </p>
-        <button class="button" name="chocolate-button" value="Хочу шоколадки!">
-          Хочу шоколадки!
-        </button>
+        <div class="special-wrapper">
+          <h2 class="special-header">Шоколадки даром!</h2>
+          <p class="special-text">
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="button" name="chocolate-button" value="Хочу шоколадки!">
+            Хочу шоколадки!
+          </button>
+        </div>
+
       </article>
     </div>
 
@@ -164,7 +173,7 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="subscription.php" method="post">
           <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
-          <label for="subscription-email">Электронная почта</label>
+          <label class="visually-hidden" for="subscription-email">Электронная почта</label>
           <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
         </form>
       </section>
