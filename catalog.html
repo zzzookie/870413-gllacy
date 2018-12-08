@@ -8,76 +8,88 @@
   </head>
 
   <body class="inner-page">
-	<header>
- 		<nav class="main-navigation">
-      <a class="image-href" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
+    <div class="container">
 
-      <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a>
-          <ul class="sub-menu">
-            <li class="sub-menu-new"><a href="#">Новинки</a></li>
-            <li><a href="catalog.html">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
+      <div class="main-navigation">
+
+        <nav class="logo-and-navigation">
+
+          <ul class="site-navigation">
+            <li class="logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></li>
+            <li><a href="catalog.html">Каталог</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-new"><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="price.html">О Компании</a></li>
           </ul>
-        </li>
-        <li><a href="delivery.html">Доставка и оплата</a></li>
-        <li><a href="price.html">О Компании</a></li>
-      </ul>
 
-      <div class="user-navigation">
+        </nav>
 
-        <span class="user-menu search" aria-haspopup="true">Поиск</span>
-        <div class="popup popup-search">
-          <form action="search.php" method="post">
-            <input type="text" name="search" id="search" placeholder="Что ищем?">
-            <label class="visually-hidden" for="search">Поле поиска</label>
-          </form>
-        </div>
+        <div class="user-navigation-container">
+          <nav class="user-navigation">
 
-        <span class="user-menu login" aria-haspopup="true">Вход</span>
-        <div class="popup popup-login">
-          <form action="login.php" method="post">
-            <input type="text" name="login" placeholder="Электронная почта" id="login">
-            <label class="visually-hidden" for="login">Электронная почта</label>
-            <input type="password" name="password" placeholder="Пароль" id="password">
-            <label class="visually-hidden" for="password">Пароль</label>
-            <button сlass="button" type="submit" name="submit" value="Войти">Войти</button>
-            <div>
-              <p><a class="login-href" href="#">Забыли пароль?</a></p>
-              <p><a class="login-href" href="#">Новая регистрация</a></p>
+            <span class="user-menu search" aria-haspopup="true"><span class="visually-hidden">Поиск</span></span>
+            <div class="popup popup-search">
+              <form action="search.php" method="post">
+                <input type="text" name="search" id="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="search">Поле поиска</label>
+              </form>
             </div>
-          </form>
-        </div>
 
-        <span class="user-menu cart cart-full" aria-haspopup="true">Корзина</span>
-        <div class="popup popup-cart">
-          <div class="cart-table">
-            <ul>
-              <li><button><img src="img/cross.svg"></button></li>
-              <li><a href="#"><img src="img/cart-item-01.jpg"></a></li>
-              <li><p><a href="#">Пломбир с апельсиновым джемом</a></p></li>
-              <li><p>1,5 кг x <span class="kg-price">200 руб.</span></p></li>
-              <li><p>300 руб.</p></li>
-            </ul>
-            <ul>
-              <li><button><img src="img/cross.svg"></button></li>
-              <li><a href="#"><img src="img/cart-item-02.jpg"></a></li>
-              <li><p><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></p></li>
-              <li><p>1,5 кг x <span class="kg-price">300 руб.</span></p></li>
-              <li><p>450 руб.</p></li>
-            </ul>
-          </div>
-          <p class="cart-amount">Итого: 750 руб.</p>
-          <a class="button" href="#">Оформить заказ</a>
+            <span class="user-menu login" aria-haspopup="true">Вход</span>
+            <div class="popup popup-login">
+              <form action="login.php" method="post">
+                <input type="text" name="login" placeholder="Электронная почта" id="login">
+                <label class="visually-hidden" for="login">Электронная почта</label>
+                <input type="password" name="password" placeholder="Пароль" id="password">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <button class="button" type="submit" name="submit" value="Войти">Войти</button>
+                <div>
+                  <p><a class="login-href" href="#">Забыли пароль?</a></p>
+                  <p><a class="login-href" href="#">Новая регистрация</a></p>
+                </div>
+              </form>
+            </div>
+
+            <span class="user-menu cart cart-full" aria-haspopup="true">2 товара</span>
+            <div class="popup popup-cart">
+              <div class="cart-table">
+                <ul>
+                  <li><button><img src="img/cross.svg"></button></li>
+                  <li><a href="#"><img src="img/cart-item-01.jpg"></a></li>
+                  <li><p><a href="#">Пломбир с апельсиновым джемом</a></p></li>
+                  <li><p>1,5 кг x <span class="kg-price">200 руб.</span></p></li>
+                  <li><p>300 руб.</p></li>
+                </ul>
+                <ul>
+                  <li><button><img src="img/cross.svg"></button></li>
+                  <li><a href="#"><img src="img/cart-item-02.jpg"></a></li>
+                  <li><p><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></p></li>
+                  <li><p>1,5 кг x <span class="kg-price">300 руб.</span></p></li>
+                  <li><p>450 руб.</p></li>
+                </ul>
+              </div>
+              <p class="cart-amount">Итого: 750 руб.</p>
+              <a class="button" href="#">Оформить заказ</a>
+            </div>
+
+            <div class="header-contacts">
+              <p class="header-contacts-schedule">С 10 до 20, ежедневно</p>
+              <p class="header-contacts-phone">8 812 450-25-25</p>
+            </div>
+
+          </nav>
+
         </div>
 
       </div>
-    </nav>
-    <div class="header-contacts">
-      <p class="header-contacts-schedule">С 10 до 20, ежедневно</p>
-      <p class="header-contacts-phone">8 812 450-25-25</p>
+
     </div>
   </header>
 
@@ -204,9 +216,10 @@
     </ul>
 	</main>
 
-	<footer>
 
-		<ul class="footer-social">
+  <footer class="container">
+
+    <ul class="footer-social">
       <li class="social social-tw">
         <a href="https://twitter.com/gllacy" aria-label="Gllacy в Твиттере">Twitter</a>
       </li>
@@ -221,20 +234,18 @@
       </li>
     </ul>
 
-		<ul class="footer-links">
-			<li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
-			<li><a href="#">О производстве</a></li>
-			<li><a href="#">Наши документы</a></li>
-			<li><a href="#">Экологические стандарты</a></li>
-		</ul>
+    <ul class="footer-links">
+      <li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
+    </ul>
 
-		<div class="copyright">
-			<p>
-        Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
-      </p>
-		</div>
+    <div class="copyright">
+      Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
+    </div>
 
-	</footer>
+  </footer>
 
   </body>
 </html>
