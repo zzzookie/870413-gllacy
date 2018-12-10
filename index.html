@@ -74,138 +74,139 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
 
-    <h1 class="visually-hidden">Глейси - магазин мороженого</h1>
+    <div class="container">
+      <h1 class="visually-hidden">Глейси - магазин мороженого</h1>
+      <div class="showcase">
 
-    <div class="showcase">
+        <!-- Здесь будет витрина со слайдером -->
+        
+      </div>
 
-      <!-- Здесь будет витрина со слайдером -->
-      
+      <div class="specials">
+        <article class="special banner raspberry">
+          <div class="special-wrapper">
+            <h2 class="special-header">Малинка даром!</h2>
+            <p class="special-text">
+              При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+          </div>
+          <div class="button-container">
+            <button class="button" name="raspberry-button" value="Хочу варенье!">
+              Хочу варенье!
+            </button>
+          </div>
+        </article>
+
+        <article class="special banner chocolate">
+          <div class="special-wrapper">
+            <h2 class="special-header">Шоколадки даром!</h2>
+            <p class="special-text">
+              При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+            </p>
+          </div>
+          <div class="button-container">
+            <button class="button" name="chocolate-button" value="Хочу шоколадки!">
+              Хочу шоколадки!
+            </button>
+          </div>
+
+        </article>
+      </div>
+
+      <ul class="catalog">
+        <li class="catalog-item hit">
+          <h2 class="catalog-item-title">
+            <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </h2>
+          <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-01.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
+          <p class="catalog-item-price">310₽<span class="catalog-item-unit">/кг</span></p>
+        </li>
+
+        <li class="catalog-item hit">
+          <h2 class="catalog-item-title">
+            <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
+          </h2>
+          <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-02.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
+          <p class="catalog-item-price">380₽<span class="catalog-item-unit">/кг</span></p>
+        </li>
+
+        <li class="catalog-item hit">
+          <h2 class="catalog-item-title">
+            <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </h2>
+          <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-03.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
+          <p class="catalog-item-price">355₽<span class="catalog-item-unit">/кг</span></p>
+        </li>
+
+        <li class="catalog-item hit">
+          <h2 class="catalog-item-title">
+            <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
+          </h2>
+          <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+          <p class="catalog-item-price">415₽<span class="catalog-item-unit">/кг</span></p>
+        </li>
+      </ul>
+
+
+      <section class="advantages banner">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <b class="advantages-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <div class="advantages-list">
+          <p class="advantages-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p class="advantages-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="advantages-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <p class="advantages-therm">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
+      </section>
+
+      <div class="blog-and-subscription">
+
+        <article class="blog banner">
+          <h2 class="blog-header">Новое в нашем блоге</h2>
+          <h3 class="blog-article">10 способов сервировки фруктовых щербетов к столу</h3>
+        </article>
+
+        <section class="subscription banner">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form action="subscription.php" method="post">
+            <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
+            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+            <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
+          </form>
+        </section>
+      </div>
     </div>
 
-    <div class="specials">
-      <article class="special banner raspberry">
-        <div class="special-wrapper">
-          <h2 class="special-header">Малинка даром!</h2>
-          <p class="special-text">
-            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-          </p>
-        </div>
-        <div class="button-container">
-          <button class="button" name="raspberry-button" value="Хочу варенье!">
-            Хочу варенье!
-          </button>
-        </div>
-      </article>
-
-      <article class="special banner chocolate">
-        <div class="special-wrapper">
-          <h2 class="special-header">Шоколадки даром!</h2>
-          <p class="special-text">
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-          </p>
-        </div>
-        <div class="button-container">
-          <button class="button" name="chocolate-button" value="Хочу шоколадки!">
-            Хочу шоколадки!
-          </button>
-        </div>
-
-      </article>
-    </div>
-
-    <ul class="catalog">
-      <li class="catalog-item hit">
-        <h2 class="catalog-item-title">
-          <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </h2>
-        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-01.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
-        <p class="catalog-item-price">310₽<span class="catalog-item-unit">/кг</span></p>
-      </li>
-
-      <li class="catalog-item hit">
-        <h2 class="catalog-item-title">
-          <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
-        </h2>
-        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-02.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
-        <p class="catalog-item-price">380₽<span class="catalog-item-unit">/кг</span></p>
-      </li>
-
-      <li class="catalog-item hit">
-        <h2 class="catalog-item-title">
-          <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </h2>
-        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-03.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
-        <p class="catalog-item-price">355₽<span class="catalog-item-unit">/кг</span></p>
-      </li>
-
-      <li class="catalog-item hit">
-        <h2 class="catalog-item-title">
-          <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
-        </h2>
-        <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-        <p class="catalog-item-price">415₽<span class="catalog-item-unit">/кг</span></p>
-      </li>
-    </ul>
-
-
-    <section class="advantages banner">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <b class="advantages-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-      <div class="advantages-list">
-        <p class="advantages-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p class="advantages-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="advantages-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p class="advantages-therm">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/map.jpg" width="1200" height="430" alt="Карта проезда">
+      <div class="address-block">
+        <h3 class="map-address">
+          Адрес главного офиса<br>
+          и офлайн-магазина:
+        </h3>
+        <p сlass="map-address">
+          <strong><address>
+              ул. Большая Конюшенная 19/8, Санкт-Петербург
+          </address></strong>
+        </p>
+        <p class="map-phone">
+          Для заказов по телефону:
+        </p>
+        <p class="map-phone">
+          <strong>
+            8 812 450-25-25
+          </strong>
+        </p>
+        <p class="map-phone">(с 10 до 20 ежедневно)</p>
+        <button class="button">Форма обратной связи</button>
       </div>
     </section>
 
-    <div class="blog-and-subscription">
-
-      <article class="blog banner">
-        <h2 class="blog-header">Новое в нашем блоге</h2>
-        <h3 class="blog-article">10 способов сервировки фруктовых щербетов к столу</h3>
-      </article>
-
-      <section class="subscription banner">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="subscription.php" method="post">
-          <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
-          <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-          <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
-        </form>
-      </section>
-
-    </div>
   </main>
-
-  <section class="map">
-    <h2 class="visually-hidden">Карта проезда</h2>
-    <img src="img/map.jpg" width="1200" height="430" alt="Карта проезда">
-    <div class="address-block">
-      <h3 class="map-address">
-        Адрес главного офиса<br>
-        и офлайн-магазина:
-      </h3>
-      <p сlass="map-address">
-        <strong><address>
-            ул. Большая Конюшенная 19/8, Санкт-Петербург
-        </address></strong>
-      </p>
-      <p class="map-phone">
-        Для заказов по телефону:
-      </p>
-      <p class="map-phone">
-        <strong>
-          8 812 450-25-25
-        </strong>
-      </p>
-      <p class="map-phone">(с 10 до 20 ежедневно)</p>
-      <button class="button">Форма обратной связи</button>
-    </div>
-  </section>
 
   <footer class="container">
 
