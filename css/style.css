@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
 	background-repeat: no-repeat;
-	background-position: center 83px;
+	background-position: center 74px;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -150,6 +150,11 @@ input[type="radio"].visually-hidden {
 	border-bottom: none;
 }
 
+.site-navigation li:nth-child(n+2) {
+	position: relative;
+	bottom: 4px;
+}
+
 .user-menu {
 	font-size: 14px;
 	font-weight: 500;
@@ -158,20 +163,6 @@ input[type="radio"].visually-hidden {
 .user-menu:hover {
 	color: #323232;
 }
-
-.header-contacts {
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.header-contacts b {
-	font-size: 22px;
-	font-weight: bold;
-}
-
-
-
-/* Главный блок */
 
 .container {
 	width: 1146px;
@@ -185,7 +176,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-and-navigation {
-	width: 853px;
+	max-width: 853px;
 }
 
 .site-navigation {
@@ -206,8 +197,13 @@ input[type="radio"].visually-hidden {
 	justify-content: flex-end;
 }
 
+.user-navigation:nth-child(-n+3) {
+	position: relative;
+	bottom: 7px;
+}
+
 .user-navigation span {
-	margin-left: 10px;
+	margin-left: 9px;
 }
 
 .user-menu {
@@ -241,8 +237,11 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
 	position: absolute;
-	top: 68px;
+	top: 50px;
 	text-align: right;
+
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .header-contacts p {
@@ -252,13 +251,16 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 
-.header-contacts strong {
-	font-size: 22px;
+.header-contacts p:first-child {
+	margin-bottom: 5px;
 }
 
-.header-contacts p:first-child {
-	margin-bottom: 7px;
+.header-contacts b {
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: bold;
 }
+
 
 /* ХЛЕБНЫЕ КРОШКИ */
 
@@ -303,8 +305,8 @@ section.slider {
 	width: 100%;
   position: relative;
   
-  padding-top: 321px;
-  margin-bottom: 40px;
+  padding-top: 310px;
+  margin-bottom: 43px;
 }
 
 .slide {
@@ -344,7 +346,7 @@ section.slider {
 
 .slide-title {
 	width: 700px;
-	margin: 0 auto 27px;
+	margin: 0 auto 29px;
 	font-size: 60px;
   line-height: 60px;
   font-weight: bold;
@@ -352,15 +354,16 @@ section.slider {
 
 .slide-button {
 	font-size: 32px;
+	line-height: 41px;
   border-radius: 50px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  padding: 12px 44px;
+  padding: 11px 40px;
   vertical-align: top;
 }
 
 .slider-controls {
 	position: absolute;
-	bottom: 63px;
+	bottom: 20px;
 	left: 0;
 	z-index: 20;
 
