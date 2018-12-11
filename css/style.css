@@ -48,6 +48,11 @@ a:active {
 	border-bottom-color: rgba(249, 172, 159, 0.3);
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 input {
 	color: #323232;
 }
@@ -75,6 +80,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 12px;
 	padding-left: 22px;
@@ -85,23 +91,40 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	color: #fefefe;
 
+	background: #ef6742;
 	background: linear-gradient(0deg, #e54934, #ef6742);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
 	outline: none;
+
+	cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
 	background: linear-gradient(0deg, #ec6f5e, #f58669);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  color: #ffffff;
 }
 
 .button:active {
 	background: linear-gradient(0deg, #e1613e, #d74632);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  color: #ffffff;
 }
 
 /* временное скрытие */
 .modal,
 .popup {
 	display: none;
+}
+
+.site-wrapper {
+	background-color: #849d8f;
+	background-image: url("../img/background-icecream-1.png");
+	background-repeat: no-repeat;
+	background-position: center 83px;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 
@@ -112,7 +135,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-	margin-right: 27px;
+	margin-right: 28px;
+	padding-bottom: 5px;
+}
+
+.site-navigation li:first-child {
+	margin-right: 24px;
 }
 
 .site-navigation a:hover,
@@ -131,16 +159,19 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 }
 
-.header-contacts-schedule {
-	font-weight: bold;	
-}
-
-.header-contacts-phone {
+.header-contacts {
+	font-size: 14px;
 	font-weight: bold;
-	font-size: 24px;
+}
+
+.header-contacts b {
+	font-size: 22px;
+	font-weight: bold;
 }
 
 
+
+/* Главный блок */
 
 .container {
 	width: 1146px;
@@ -215,10 +246,17 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts p {
+	font-size: 14px;
+	font-weight: bold;
+
 	margin: 0;
 }
 
-p.header-contacts-schedule {
+.header-contacts strong {
+	font-size: 22px;
+}
+
+.header-contacts p:first-child {
 	margin-bottom: 7px;
 }
 
@@ -230,7 +268,8 @@ p.header-contacts-schedule {
 .catalog,
 .paginator,
 .footer-social,
-.footer-links {
+.footer-links,
+.slider-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -258,20 +297,95 @@ p.header-contacts-schedule {
 
 
 
-/* Витрина */
+/* Слайдер */
 
-.showcase {
-	box-shadow: 0 0 3px 5px rgba(255, 0, 0, 0.5);
-	height: 574px;
+section.slider {
 	width: 100%;
+  position: relative;
+  
+  padding-top: 321px;
+  margin-bottom: 40px;
 }
 
+.slide {
+	display: none;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+	display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+	background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper {
+	background-color: #849d8f;
+	background-image: url("../img/background-icecream-1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+	background-color: #8996a6;
+	background-image: url("../img/background-icecream-2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+	background-color: #9d8b84;
+	background-image: url("../img/background-icecream-3.png");
+}
+
+.slider-list {
+	text-align: center;
+}
+
+.slide-title {
+	width: 700px;
+	margin: 0 auto 27px;
+	font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.slide-button {
+	font-size: 32px;
+  border-radius: 50px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  padding: 12px 44px;
+  vertical-align: top;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 63px;
+	left: 0;
+	z-index: 20;
+
+	font-size: 0px;
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+
+	vertical-align: top;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
 
 /* Специальные предложения */
 
 .banner {
 	border-radius: 13px;
-	padding: 23px 20px;
+	padding: 23px 19px;
 	margin-bottom: 40px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -395,6 +509,8 @@ p.header-contacts-schedule {
 	width: 49%;
 	box-sizing: border-box;
 	padding-left: 56px;
+
+	background-image: url("../img/banner-wafle.jpg")
 }
 
 /* Блог и подписка */
