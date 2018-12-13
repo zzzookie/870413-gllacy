@@ -1,45 +1,23 @@
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/roboto.woff") format("woff");
+	src: url("fonts/roboto.woff2");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/robotobold.woff") format("woff");
+	src: url("fonts/robotobold.woff2");
 	font-style: normal;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Roboto";
-	src: url("../fonts/robotomedium.woff") format("woff");
+	src: url("fonts/robotomedium.woff2");
 	font-style: normal;
 	font-weight: 500;
 }
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/roboto.woff2") format("woff2");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotobold.woff2") format("woff2");
-	font-style: normal;
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotomedium.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 500;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
 
 body {
 	color: #ffffff;
@@ -103,16 +81,15 @@ input[type="radio"].visually-hidden {
 
 .button {
 	display: inline-block;
-	padding-top: 11px;
-	padding-bottom: 14px;
+	padding-top: 10px;
+	padding-bottom: 12px;
 	padding-left: 22px;
 	padding-right: 22px;
-	border-radius: 25px;
+	border-radius: 20px;
 
 	font-size: 18px;
 	font-weight: bold;
 	color: #fefefe;
-	text-decoration: none;
 
 	background: #ef6742;
 	background: linear-gradient(0deg, #e54934, #ef6742);
@@ -121,10 +98,6 @@ input[type="radio"].visually-hidden {
 	outline: none;
 
 	cursor: pointer;
-}
-
-a.button {
-	text-decoration: none;
 }
 
 .button:hover,
@@ -171,7 +144,7 @@ header {
 }
 
 .site-navigation li:first-child {
-	margin-right: 23px;
+	margin-right: 24px;
 }
 
 .site-navigation a:hover,
@@ -183,7 +156,7 @@ header {
 
 .site-navigation li:nth-child(n+2) {
 	position: relative;
-	bottom: 5px;
+	bottom: 4px;
 }
 
 .user-menu {
@@ -213,6 +186,7 @@ header {
 .site-navigation {
 	display: inline-flex;
 	align-items: center;
+
 }
 
 .user-navigation-container {
@@ -307,6 +281,7 @@ header {
 	padding: 0;
 }
 
+.site-navigation li,
 .breadcrumbs li,
 .paginator li,
 .footer-social li {
@@ -315,7 +290,6 @@ header {
 
 .breadcrumbs {
 	font-size: 14px;
-	margin-bottom: 4px;
 }
 
 .breadcrumbs li:nth-child(n + 2)::before {
@@ -326,13 +300,6 @@ header {
 	border-bottom: none;
 }
 
-/* Фильтр */
-
-.filter {
-	width: 100%;
-	height: 198px;
-	box-shadow: 0 0 3px 5px rgba(200,0,0,0.3);
-}
 
 
 /* Слайдер */
@@ -341,7 +308,7 @@ section.slider {
 	width: 100%;
   position: relative;
   
-  padding-top: 290px;
+  padding-top: 310px;
   margin-bottom: 43px;
 }
 
@@ -382,7 +349,7 @@ section.slider {
 
 .slide-title {
 	width: 700px;
-	margin: 0 auto 32px;
+	margin: 0 auto 29px;
 	font-size: 60px;
   line-height: 60px;
   font-weight: bold;
@@ -423,10 +390,9 @@ section.slider {
 /* Специальные предложения */
 
 .banner {
-	border-radius: 15px;
-	padding: 14px 18px;
+	border-radius: 13px;
+	padding: 23px 19px;
 	margin-bottom: 40px;
-
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-origin: border-box;
@@ -450,18 +416,13 @@ section.slider {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .special h2 {
 	font-size: 35px;
-	font-weight: bold;
-}
-
-.special-text {
-	font-size: 18px;
-	line-height: 22px;
-	margin-top: 16px;
-	font-weight: bold;
 }
 
 .raspberry {
@@ -475,8 +436,7 @@ section.slider {
 .button-container {
 	text-align: right;
 	vertical-align: bottom;
-	padding-bottom: 10px;
-	padding-right: 4px;
+	width: 100%;
 }
 
 /* Каталог */
@@ -491,7 +451,7 @@ section.slider {
 	display: flex;
 	flex-direction: column;
 	width: 267px;
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 	margin-right: 26px;
 }
 
@@ -506,11 +466,9 @@ section.slider {
 .catalog-item-title {
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 22px;
-	width: 258px;
 
 	text-align: center;
-	margin: 8px auto 0;
+	margin: 0px;
 	padding: 0px;
 
 	order: 2;
@@ -524,8 +482,7 @@ section.slider {
 	padding: 0px;
 
 	position: absolute;
-	top: 205px;
-	left: -2px;
+	top: 210px;
 }
 
 .catalog-item-unit {
@@ -544,12 +501,8 @@ section.slider {
 }
 
 .advantages-header {
-	display: inline-block;
 	font-size: 24px;
-	line-height: 31px;
 	font-weight: 500;
-	margin-top: 9px;
-	margin-bottom: 5px;
 }
 
 .advantages-list {
@@ -561,10 +514,9 @@ section.slider {
 .advantages-list p {
 	width: 49%;
 	box-sizing: border-box;
-	padding-left: 57px;
-	padding-right: 5px;
-	line-height: 22px;
-	margin-bottom: 8px;
+	padding-left: 56px;
+
+	background-image: url("../img/banner-wafle.jpg")
 }
 
 /* Блог и подписка */
@@ -586,57 +538,19 @@ section.slider {
 	background-image: url("../img/banner-strawberry.jpg");
 }
 
-.blog h2 {
-	display: inline-block;
+.blog-header {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 0px;
-	margin: 9px 0px 7px;
+	margin: 0px;
 }
 
 .blog h3 {
 	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
 	text-decoration: underline;
 	width: 300px;
 	margin: 0px;
-}
-
-.blog a {
-	color: #323232;
-}
-
-.subscription {
-	padding: 18px 26px;
-}
-
-.subscription p {
-	line-height: 22px;
-}
-
-.subscription form {
-	display: flex;
-	align-items: center;
-	margin-top: 37px;
-}
-
-.subscription input[type="text"] {
-	flex-grow: 1;
-	box-sizing: border-box;
-	border-radius: 5px;
-	border: 1px solid #d3d3d3;
-	line-height: 24px;
-	padding-top: 9px;
-	padding-bottom: 11px;
-	padding-left: 12px;
-	margin-right: 12px;
-}
-
-.subscription {
-	color: #5a5a5a;
-
-	background-image: url("../img/banner-postcard-temporary.jpg");
 }
 
 /* Блок карта */
@@ -651,7 +565,7 @@ section.slider {
 .address-block {
 	background-color: white;
 	color: #323232;
-	padding: 30px 24px 28px;
+	padding: 33px 24px 28px;
 	width: 302px;
 	height: 305px;
 	box-sizing: border-box;
@@ -662,36 +576,27 @@ section.slider {
 	right: 27px;
 }
 
-.address-block h3 {
+.address-block h3,
+.address-block p {
 	font-size: 14px;
-	line-height: 20px;
 	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 10px;
+	margin: 0px;
 }
 
-
-.map-address {
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: normal;
-	margin-top: 0;
-}
-
-.address-block address {
+.address-block strong {
 	font-size: 18px;
-	line-height: 24px;
 	font-weight: bold;
 	font-style: normal;
 }
 
+.subscription {
+	color: #5a5a5a;
 
-/* Внутренняя страница */
+	background-image: url("../img/banner-postcard-temporary.jpg");
+}
 
 .inner-page h1 {
 	font-size: 35px;
-	margin: 0;
-	padding: 0;
 }
 
 .inner-page main {

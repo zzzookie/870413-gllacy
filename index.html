@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <title>Магазин мороженого Глейси — Главная</title>
   </head>
   <body>
@@ -177,7 +178,7 @@
 
       <section class="advantages banner">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <b class="advantages-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <p class="advantages-header"><b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b></p>
         <div class="advantages-list">
           <p class="advantages-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p class="advantages-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
@@ -190,17 +191,19 @@
 
         <article class="blog banner">
           <h2 class="blog-header">Новое в нашем блоге</h2>
-          <h3 class="blog-article">10 способов сервировки фруктовых щербетов к столу</h3>
+          <h3 class="blog-article"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
         </article>
 
         <section class="subscription banner">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="subscription.php" method="post">
-            <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
-            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-            <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
-          </form>
+          <div class="subscription-form">
+            <form action="subscription.php" method="post">
+              <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
+              <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+              <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
     </div>
