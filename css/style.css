@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 	font-family: "Roboto";
 	src: url("../fonts/roboto.woff") format("woff");
 	font-style: normal;
@@ -18,6 +18,7 @@
 	font-style: normal;
 	font-weight: 500;
 }
+
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/roboto.woff2") format("woff2");
@@ -37,9 +38,9 @@
 	src: url("../fonts/robotomedium.woff2") format("woff2");
 	font-style: normal;
 	font-weight: 500;
-}
+}*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
+
 
 body {
 	color: #ffffff;
@@ -104,9 +105,9 @@ input[type="radio"].visually-hidden {
 .button {
 	display: inline-block;
 	padding-top: 11px;
-	padding-bottom: 14px;
-	padding-left: 22px;
-	padding-right: 22px;
+	padding-bottom: 13px;
+	padding-left: 19px;
+	padding-right: 19px;
 	border-radius: 25px;
 
 	font-size: 18px;
@@ -171,7 +172,7 @@ header {
 }
 
 .site-navigation li:first-child {
-	margin-right: 23px;
+	margin-right: 24px;
 }
 
 .site-navigation a:hover,
@@ -341,8 +342,8 @@ section.slider {
 	width: 100%;
   position: relative;
   
-  padding-top: 290px;
-  margin-bottom: 43px;
+  padding-top: 292px;
+  margin-bottom: 41px;
 }
 
 .slide {
@@ -382,7 +383,7 @@ section.slider {
 
 .slide-title {
 	width: 700px;
-	margin: 0 auto 32px;
+	margin: 0 auto 31px;
 	font-size: 60px;
   line-height: 60px;
   font-weight: bold;
@@ -399,7 +400,7 @@ section.slider {
 
 .slider-controls {
 	position: absolute;
-	bottom: 20px;
+	bottom: 22px;
 	left: 0;
 	z-index: 20;
 
@@ -454,13 +455,14 @@ section.slider {
 
 .special h2 {
 	font-size: 35px;
+	line-height: 44px;
 	font-weight: bold;
 }
 
 .special-text {
 	font-size: 18px;
 	line-height: 22px;
-	margin-top: 16px;
+	margin-top: 14px;
 	font-weight: bold;
 }
 
@@ -491,7 +493,7 @@ section.slider {
 	display: flex;
 	flex-direction: column;
 	width: 267px;
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 	margin-right: 26px;
 }
 
@@ -526,6 +528,10 @@ section.slider {
 	position: absolute;
 	top: 205px;
 	left: -2px;
+}
+
+.catalog-item-currency {
+	margin-left: 4px;
 }
 
 .catalog-item-unit {
@@ -591,12 +597,12 @@ section.slider {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 0px;
-	margin: 9px 0px 7px;
+	margin: 13px 0px 7px;
 }
 
 .blog h3 {
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 29px;
 	font-weight: bold;
 	text-decoration: underline;
 	width: 300px;
@@ -623,12 +629,13 @@ section.slider {
 
 .subscription input[type="text"] {
 	flex-grow: 1;
+
 	box-sizing: border-box;
 	border-radius: 5px;
 	border: 1px solid #d3d3d3;
 	line-height: 24px;
-	padding-top: 9px;
-	padding-bottom: 11px;
+	padding-top: 8px;
+	padding-bottom: 10px;
 	padding-left: 12px;
 	margin-right: 12px;
 }
@@ -644,22 +651,37 @@ section.slider {
 .map {
 	width: 1200px;
 	height: 430px;
-	margin: 0 auto 18px;
+	margin: 0 auto;
 	position: relative;
 }
 
 .address-block {
 	background-color: white;
 	color: #323232;
-	padding: 30px 24px 28px;
+	padding: 30px 25px 30px;
 	width: 302px;
 	height: 305px;
 	box-sizing: border-box;
 	border-radius: 13px;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: stretch;
+
 	position: absolute;
 	top: 62px;
 	right: 27px;
+}
+
+.address-block p {
+	display: inline-block;
+
+	margin-top: 0;
+
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
 }
 
 .address-block h3 {
@@ -667,24 +689,26 @@ section.slider {
 	line-height: 20px;
 	font-weight: normal;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
-
-.map-address {
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: normal;
-	margin-top: 0;
+#map-address {
+	margin-bottom: 18px;
 }
 
-.address-block address {
+div.address-block strong {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
 	font-style: normal;
+
+	margin-top: 0;
 }
 
+.map-phone {
+	margin-bottom: 4px;
+}
 
 /* Внутренняя страница */
 
@@ -695,10 +719,11 @@ section.slider {
 }
 
 .inner-page main {
-	padding-bottom: 30px;
-	margin-bottom: 18px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 33px;
+}
 
+.inner-page .footer-wrap {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Пэйджинатор */
@@ -707,10 +732,11 @@ section.slider {
 	display: flex;
 	justify-content: flex-end;
 
+	margin-top: 44px;
 }
 
 .paginator li {
-	margin-left: 21px;
+	margin-left: 20px;
 }
 
 .paginator a {
@@ -726,6 +752,16 @@ section.slider {
 	font-size: 16px;
 }
 
+li.previous-page {
+	opacity: 0.3;
+	transform: rotate(180deg);
+	margin-right: 4px;
+}
+
+li.next-page {
+	margin-left: 25px;
+}
+
 .paginator .current-page {
 	color: #323232;
 	font-weight: 500;
@@ -738,18 +774,53 @@ section.slider {
 
 /* Футер */
 
-footer {
+.footer-wrap {
+	padding-top: 18px;
 	margin-bottom: 29px;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 } 
 
 .footer-social {
-/*	width: 267px;*/
+	margin-top: 18px;
+}
+
+.social {
+	/*width: 267px;*/
+	box-sizing: border-box;
+	width: 38px;
+	height: 38px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+	opacity: 0.8;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.social-tw {
+	background-image: url("../img/social-tw.svg");
+}
+
+.social-ig {
+	background-image: url("../img/social-ig.svg");
+}
+
+.social-fb {
+	background-image: url("../img/social-fb.svg");
+}
+
+.social-vk {
+	background-image: url("../img/social-vk.svg");
 }
 
 .footer-links {
+	margin-top: 15px;
+	margin-left: 195px;
 	font-size: 13px;
+	line-height: 22px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -760,15 +831,24 @@ footer {
 
 .footer-links li {
 	max-width: 50%;
-	padding-left: 22px;
-	margin-left: 10px;
+	min-width: 112px;
+	padding-left: 30px;
 }
 
 .footer-links-supplier {
 	font-weight: bold;
+	background-position: 9px 4px;
+	background-repeat: no-repeat;
+	background-image: url("../img/heart.svg");
 }
 
 .copyright {
+	margin-left: auto;
+	padding-top: 46px;
 	font-size: 12px;
+
+	background-image: url("../img/logo-htmlacademy.svg");
+	background-repeat: no-repeat;
+	background-size: 104px 38px;
 /*	width: 267px;*/
 }

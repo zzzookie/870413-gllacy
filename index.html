@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Магазин мороженого Глейси — Главная</title>
   </head>
   <body>
@@ -21,7 +21,7 @@
         <nav class="logo-and-navigation">
 
           <ul class="site-navigation">
-            <li class="logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></li>
+            <li class="logo"><a class="image-href"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a></li>
             <li><a href="catalog.html">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu-new"><a href="#">Новинки</a></li>
@@ -147,7 +147,7 @@
             <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h2>
           <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-01.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></a>
-          <p class="catalog-item-price">310₽<span class="catalog-item-unit">/кг</span></p>
+          <p class="catalog-item-price">310<span class="catalog-item-currency">₽</span><span class="catalog-item-unit">/кг</span></p>
         </li>
 
         <li class="catalog-item hit">
@@ -155,7 +155,7 @@
             <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
           </h2>
           <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-02.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада"></a>
-          <p class="catalog-item-price">380₽<span class="catalog-item-unit">/кг</span></p>
+          <p class="catalog-item-price">380<span class="catalog-item-currency">₽</span><span class="catalog-item-unit">/кг</span></p>
         </li>
 
         <li class="catalog-item hit">
@@ -163,7 +163,7 @@
             <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h2>
           <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-03.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></a>
-          <p class="catalog-item-price">355₽<span class="catalog-item-unit">/кг</span></p>
+          <p class="catalog-item-price">355<span class="catalog-item-currency">₽</span><span class="catalog-item-unit">/кг</span></p>
         </li>
 
         <li class="catalog-item hit">
@@ -171,7 +171,7 @@
             <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
           </h2>
           <a class="image-href" href="catalog-item.html"><img src="img/catalog-item-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-          <p class="catalog-item-price">415₽<span class="catalog-item-unit">/кг</span></p>
+          <p class="catalog-item-price">415<span class="catalog-item-currency">₽</span><span class="catalog-item-unit">/кг</span></p>
         </li>
       </ul>
 
@@ -212,59 +212,69 @@
       <h2 class="visually-hidden">Карта проезда</h2>
       <img src="img/map.jpg" width="1200" height="430" alt="Карта проезда">
       <div class="address-block">
-        <h3 class="map-address">
+        <div class="address-block-text">
+          <h3>
           Адрес главного офиса<br>
           и офлайн-магазина:
-        </h3>
-        <p сlass="map-address">
-          <strong><address>
-              ул. Большая Конюшенная 19/8, Санкт-Петербург
-          </address></strong>
-        </p>
-        <p class="map-phone">
-          Для заказов по телефону:
-        </p>
-        <p class="map-phone">
-          <strong>
-            8 812 450-25-25
-          </strong>
-        </p>
-        <p class="map-phone">(с 10 до 20 ежедневно)</p>
-        <button class="button">Форма обратной связи</button>
-      </div>
+          </h3>
+          <p id="map-address">
+            <strong>
+                ул. Большая Конюшенная 19/8, Санкт-Петербург
+            </strong>
+          </p>
+          <p class="map-phone">
+            Для заказов по телефону:
+          </p>
+          <p class="map-phone">
+            <strong>
+              8 812 450-25-25
+            </strong>
+          </p>
+          <p class="map-phone">(с 10 до 20 ежедневно)</p>
+        </div>
+            <button class="button">Форма обратной связи</button>
     </section>
 
   </main>
 
-  <footer class="container">
+    <footer class="container">
+      <div class="footer-wrap">
 
-    <ul class="footer-social">
-      <li class="social social-tw">
-        <a href="https://twitter.com/gllacy" aria-label="Gllacy в Твиттере">Twitter</a>
-      </li>
-      <li class="social social-ig">
-        <a href="https://instagram.com/gllacy" aria-label="Gllacy в Инстаграме">Instagram</a>
-      </li>
-      <li class="social social-fb">
-        <a href="https://facebook.com/gllacy" aria-label="Gllacy в Фейсбуке">Facebook</a>
-      </li>
-      <li class="social social-vk">
-        <a href="https://vk.com/gllacy" aria-label="Gllacy во Вконтакте">VK</a>
-      </li>
-    </ul>
+        <ul class="footer-social">
+          <a class="image-href" href="https://twitter.com/gllacy" aria-label="Gllacy в Твиттере">
+            <li class="social social-tw">
+              <span class="visually-hidden">Twitter</span>
+            </li>
+          </a>
+          <a class="image-href" href="https://instagram.com/gllacy" aria-label="Gllacy в Инстаграме">  <li class="social social-ig">
+              <span class="visually-hidden">Instagram</span>
+            </li>
+          </a>
+          <a class="image-href" href="https://facebook.com/gllacy" aria-label="Gllacy в Фейсбуке">
+            <li class="social social-fb">
+              <span class="visually-hidden">Facebook</span>
+            </li>
+          </a>
+          <a class="image-href" href="https://vk.com/gllacy" aria-label="Gllacy во Вконтакте">
+            <li class="social social-vk">
+              <span class="visually-hidden">VK</span>
+            </li>
+          </a>
+        </ul>
 
-    <ul class="footer-links">
-      <li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
-      <li><a href="#">Наши документы</a></li>
-      <li><a href="#">О производстве</a></li>
-      <li><a href="#">Экологические стандарты</a></li>
-    </ul>
+        <ul class="footer-links">
+          <li class="footer-links-supplier"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
 
-    <div class="copyright">
-      Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
-    </div>
-    
-  </footer>
+        <div class="copyright">
+          Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> © 2017
+        </div>
+
+      </div>
+    </footer>
 
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
