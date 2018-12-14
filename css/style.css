@@ -76,12 +76,34 @@ img {
 	height: auto;
 }
 
-input {
+input[type="text"] {
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d3d3d3;
+	outline: none;
 	color: #323232;
+	font-weight: bold;
+
+	line-height: 24px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 12px;
 }
 
-input::placeholder {
+input[type="text"]::placeholder {
 	color: #999999;
+	font-weight: normal;
+}
+
+input[type="text"]:hover {
+	box-shadow: 0px 0px 0px 1px #d3d3d3;
+	border-color: #c7c6c5;
+}
+
+input[type="text"]:focus {
+	box-shadow: 0px 0px 0px 1px #8fbdec;
+	border-color: #8fbdec;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -442,6 +464,16 @@ section.slider {
 	background-color: #ffffff;
 }
 
+label[for^="product-"]:hover,
+label[for^="product-"]:focus {
+	background-color: rgba(247, 246, 243, 0.4);
+	cursor: pointer;
+}
+
+label[for^="product-"]:active {
+	background-color: #ffffff;	
+	}
+
 #product-1:checked ~ .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
@@ -742,20 +774,12 @@ section.slider {
 
 .subscription form {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	margin-top: 35px;
 }
 
 .subscription input[type="text"] {
 	flex-grow: 1;
-
-	box-sizing: border-box;
-	border-radius: 5px;
-	border: 1px solid #d3d3d3;
-	line-height: 24px;
-	padding-top: 8px;
-	padding-bottom: 10px;
-	padding-left: 12px;
 	margin-right: 12px;
 }
 
@@ -911,6 +935,15 @@ li.next-page {
 	margin-right: 8px;
 }
 
+.social:hover,
+.social:focus {
+	opacity: 1;
+}
+
+.social:active {
+	box-shadow: inset 0px 2px 1px 0px #888888;
+}
+
 .social-tw {
 	background-image: url("../img/social-tw.svg");
 }
@@ -932,11 +965,13 @@ li.next-page {
 	margin-left: 195px;
 	font-size: 13px;
 	line-height: 22px;
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
 	flex-wrap: wrap;
+
 	width: 350px;
 }
 
