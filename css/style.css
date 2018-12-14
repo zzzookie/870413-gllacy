@@ -165,7 +165,8 @@ a.button {
 
 /* временное скрытие */
 .modal,
-.popup {
+.popup-login,
+.popup-cart {
 	display: none;
 }
 
@@ -203,7 +204,7 @@ header {
 	margin-right: 2px;
 
 	position: relative;
-	bottom: 4px;
+	bottom: 5px;
 }
 
 .site-navigation-item span {
@@ -244,13 +245,16 @@ header {
 	box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
+.site-navigation-current > a > span {	
+	border-bottom: none;
+}
+
 li.site-navigation-current > a {
 	border-radius: 16px;
 	background-color: #d07058;
 	font-weight: bold;
 
 	display: block;
-	border-bottom: none;
 	outline: none;
 
 	padding-right: 13px;
@@ -262,13 +266,20 @@ li.site-navigation-current > a {
 }
 
 li.site-navigation-current > a:hover {
- color: #ffffff;
+ color: #323232;
+}
+
+/* Подменю */
+
+.site-navigation-item:hover .sub-menu {
+	display: block;
 }
 
 .sub-menu {
 	/* ВРЕМЕННО */
+	display: none;
 	position: absolute;
-	top: 36px;
+	top: 37px;
 	left: -7px;
 	padding: 3px 0px 7px;
 
@@ -327,6 +338,8 @@ li.sub-menu-new span:hover {
 	font-weight: bold;
 }
 
+/* Пользовательский блок навигации */
+
 .user-menu {
 	font-size: 14px;
 	font-weight: 500;
@@ -361,7 +374,7 @@ li.sub-menu-new span:hover {
 
 .user-navigation:nth-child(-n+3) {
 	position: relative;
-	bottom: 4px;
+	bottom: 5px;
 }
 
 .user-navigation span {
@@ -390,8 +403,35 @@ li.sub-menu-new span:hover {
 }
 
 .search:hover {
+	background-color: #ffffff;
 	background-image: url('../img/search-black.svg');
 }
+
+/* Всплывающий поиск */
+
+.search:hover + .popup-search {
+	display: block;
+}
+
+.popup-search {
+	display: none;
+	position: absolute;
+	bottom: -88px;
+	left: -297px;
+	padding: 20px 15px;
+	border-radius: 5px;
+
+	background-color: #f8f7f4;
+	z-index: 2;
+	box-shadow:	0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.popup-search input[type="text"] {
+	box-sizing: border-box;
+	width: 309px;
+	font-size: 14px;
+}
+
 
 .login {
 	padding-left: 45px;
