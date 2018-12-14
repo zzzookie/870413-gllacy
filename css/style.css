@@ -151,7 +151,7 @@ a.button {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
 	background-repeat: no-repeat;
-	background-position: center 74px;
+	background-position: center 80px;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -159,41 +159,85 @@ a.button {
 /* HEADER */
 
 header {
-	margin-bottom: 17px;
+	margin-bottom: 22px;
+	padding-top: 7px;
 }
 
-.site-navigation a {
-	font-weight: bold;
+.site-navigation,
+.logo-and-navigation {
+	display: flex;
+	align-items: center;
 }
 
-.site-navigation li {
-	margin-right: 2px;
-
-	padding-right: 13px;
-	padding-left: 13px;
-	padding-top: 6px;
-	padding-bottom: 8px; 
-}
-
-.site-navigation li:nth-child(n+2):hover {
-	border-radius: 16px;
-	background-color: #f7f6f3;
-}
-
-.site-navigation li:first-child {
+.logo {
 	margin-right: 10px;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.site-navigation a:active {
-	color: #323232;
-	border-bottom: none;
+.site-navigation-item {
+	margin-right: 2px;
+
+	position: relative;
+	bottom: 4px;
 }
 
-.site-navigation li:nth-child(n+2) {
+.site-navigation-item span {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.site-navigation-item span:hover {
+	border-bottom: none;
+	box-shadow: none;
+}
+
+.site-navigation-item a {
+	font-weight: bold;
+
+	display: block;
+	border-bottom: none;
+
+	padding-right: 13px;
+	padding-left: 13px;
+	padding-top: 7px;
+	padding-bottom: 7px; 
+}
+
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
+	border-radius: 16px;
+	background-color: #f7f6f3;
+	box-shadow: 0px 0px 0px 1px #ffffff;
+	outline: none;
+
+	color: #323232;
+}
+
+.site-navigation-item:active a {
+	background-color: #ededed;
+	box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+li.site-navigation-current a {
+	border-radius: 16px;
+	background-color: #d07058;
+	font-weight: bold;
+
+	display: block;
+	border-bottom: none;
+
+	padding-right: 13px;
+	padding-left: 13px;
+	padding-top: 7px;
+	padding-bottom: 7px; 
+	margin-right: 2px;
+
 	position: relative;
-	bottom: 5px;
+	bottom: 4px;
+}
+
+li.site-navigation-current a:hover {
+ color: #ffffff;
 }
 
 .user-menu {
@@ -239,7 +283,7 @@ header {
 
 .user-navigation:nth-child(-n+3) {
 	position: relative;
-	bottom: 7px;
+	bottom: 4px;
 }
 
 .user-navigation span {
@@ -317,7 +361,7 @@ header {
 }
 
 .header-contacts p:first-child {
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 }
 
 .header-contacts b {
@@ -354,7 +398,9 @@ header {
 }
 
 .breadcrumbs li:nth-child(n + 2)::before {
-	content:' » '; 
+	content:' » ';
+	margin-left: 4px;
+	margin-right: 4px; 
 }
 
 .breadcrumbs-current {
@@ -667,7 +713,7 @@ section.slider {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 0px;
-	margin: 13px 0px 7px;
+	margin: 10px 0px 7px;
 }
 
 .blog h3 {
@@ -685,6 +731,9 @@ section.slider {
 
 .subscription {
 	padding: 18px 26px;
+	color: #5a5a5a;
+
+	background-image: url("../img/banner-postcard-temporary.jpg");
 }
 
 .subscription p {
@@ -694,7 +743,7 @@ section.slider {
 .subscription form {
 	display: flex;
 	align-items: center;
-	margin-top: 37px;
+	margin-top: 35px;
 }
 
 .subscription input[type="text"] {
@@ -708,12 +757,6 @@ section.slider {
 	padding-bottom: 10px;
 	padding-left: 12px;
 	margin-right: 12px;
-}
-
-.subscription {
-	color: #5a5a5a;
-
-	background-image: url("../img/banner-postcard-temporary.jpg");
 }
 
 /* Блок карта */
@@ -857,15 +900,13 @@ li.next-page {
 }
 
 .social {
-	/*width: 267px;*/
-	box-sizing: border-box;
-	width: 38px;
-	height: 38px;
+	width: 34px;
+	height: 34px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100% 100%;
 	opacity: 0.8;
-	border: 3px solid rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 	margin-right: 8px;
 }
