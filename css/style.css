@@ -916,6 +916,7 @@ label[for^="product-"]:active {
 
 .catalog-item img {
 	border-radius: 50%;
+	z-index: 1;
 }
 
 .catalog-item-title {
@@ -929,6 +930,7 @@ label[for^="product-"]:active {
 	padding: 0px;
 
 	order: 2;
+	z-index: 10;
 }
 
 .catalog-item-price {
@@ -937,6 +939,7 @@ label[for^="product-"]:active {
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 	margin: 0px;
 	padding: 0px;
+	z-index: 10;
 
 	position: absolute;
 	top: 208px;
@@ -953,6 +956,34 @@ label[for^="product-"]:active {
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+.catalog-item:hover .overlay {
+	display: flex;
+}
+
+.catalog-item:hover img {
+	z-index: 9;
+}
+
+.overlay {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 5;
+
+	top: -13px;
+	right: -13px;
+	width: 293px;
+	height: 405px;
+
+	text-align: center;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	background-color: rgba(248, 247, 244, 0.2);
+	border-radius: 5px;
+}
+
 .hit::before {
 	content: "";
 	width: 61px;
@@ -965,6 +996,7 @@ label[for^="product-"]:active {
 	background-image: url("../img/hit.svg");
 	background-repeat: no-repeat;
 }
+
 
 /* Блок "Наши преимущества" */
 
