@@ -180,7 +180,6 @@ a.button {
 .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
-	background-position: 50% 80px;
 			/*525 радиус, #cff6e1*/;
 	background-repeat: no-repeat;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -781,7 +780,9 @@ label[for^="product-"]:active {
 	background-image:
 			url("../img/background-icecream-1.png"),
 			radial-gradient(circle 525px at center 360px, rgba(205, 244, 223, 1), rgba(255, 255, 255, 0));
-	background-position: 50% 80px;
+	background-position:
+			50% 80px,
+			50% 0px;
 }
 
 #product-2:checked ~ .site-wrapper {
@@ -789,7 +790,9 @@ label[for^="product-"]:active {
 	background-image:
 			url("../img/background-icecream-2.png"),
 			radial-gradient(circle 525px at center 360px, rgba(192, 211, 226, 1), rgba(255, 255, 255, 0));
-	background-position: 50% 80px;;
+	background-position:
+			50% 80px,
+			50% 0px;
 }
 
 #product-3:checked ~ .site-wrapper {
@@ -797,7 +800,9 @@ label[for^="product-"]:active {
 	background-image:
 			url("../img/background-icecream-3.png"),
 			radial-gradient(circle 525px at center 360px, rgba(225, 206, 198, 1), rgba(255, 255, 255, 0));
-	background-position: 50% 80px;;
+	background-position:
+			50% 80px,
+			50% 0px;
 }
 
 .slider-list {
