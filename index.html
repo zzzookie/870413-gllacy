@@ -22,15 +22,20 @@
 
             <div class="logo"><a class="image-href"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a></li></div>
             <ul class="site-navigation">
-              <li class="site-navigation-item"><a href="catalog.html"><span>Каталог</span></a>
-                <ul class="sub-menu">
-                  <li class="sub-menu-new"><a href="#"><span>Новинки</span></a></li>
-                  <li><a href="catalog.html"><span>Сливочное</span></a></li>
-                  <li><a href="#"><span>Щербеты</span></a></li>
-                  <li><a href="#"><span>Фруктовый лед</span></a></li>
-                  <li><a href="#"><span>Мелорин</span></a></li>
+              <li class="site-navigation-item">
+                <a href="catalog.html"><span>Каталог</span></a>
+
+                <ul class="sub-menu-wrapper">
+                  <div class="sub-menu">
+                    <li class="sub-menu-new"><a href="#"><span>Новинки</span></a></li>
+                    <li><a href="catalog.html"><span>Сливочное</span></a></li>
+                    <li><a href="#"><span>Щербеты</span></a></li>
+                    <li><a href="#"><span>Фруктовый лед</span></a></li>
+                    <li><a href="#"><span>Мелорин</span></a></li>
+                  </div>
                 </ul>
               </li>
+
               <li class="site-navigation-item"><a href="delivery.html"><span>Доставка и оплата</span></a></li>
               <li class="site-navigation-item"><a href="price.html"><span>О Компании</span></a></li>
             </ul>
@@ -43,12 +48,13 @@
                 <div class="user-menu search" aria-haspopup="true">
                   <span class="visually-hidden">Поиск</span>
 
-                <div class="search-wrapper">
-                  <div class="popup popup-search">
-                    <form action="search.php" method="post">
-                      <input type="text" name="search" id="search" placeholder="Что ищем?">
-                      <label class="visually-hidden" for="search">Поле поиска</label>
-                    </form>
+                  <div class="search-wrapper">
+                    <div class="popup popup-search">
+                      <form action="search.php" method="post">
+                        <input type="text" name="search" id="search" placeholder="Что ищем?">
+                        <label class="visually-hidden" for="search">Поле поиска</label>
+                      </form>
+                    </div>
                   </div>
                 </div>
 
