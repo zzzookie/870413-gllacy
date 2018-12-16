@@ -180,7 +180,6 @@ a.button {
 .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
-			/*525 радиус, #cff6e1*/;
 	background-repeat: no-repeat;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -430,20 +429,30 @@ li.sub-menu-new span:hover {
 
 /* Всплывающий поиск */
 
-.search:hover > .popup-search {
+.search:hover > .search-wrapper {
 	display: block;
 }
 
-.popup-search {
+.search-wrapper {
 	display: none;
 	position: absolute;
-	top: 36px;
+	top: 26px;
 	right: 0px;
+	z-index: 3;
+
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.popup-search {
 	padding: 20px 15px;
 	border-radius: 5px;
 
 	background-color: #f8f7f4;
-	z-index: 2;
+
+	z-index: 4;
 	box-shadow:	0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -469,20 +478,29 @@ li.sub-menu-new span:hover {
 
 /* Всплывающее окно авторизации */
 
-.login:hover > .popup-login {
+.login:hover > .login-wrapper {
 	display: block;
 }
 
-.popup-login {
+.login-wrapper {
 	display: none;
 	position: absolute;
-	top: 36px;
+	z-index: 3;
+	top: 26px;
 	right: -2px;
+
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.popup-login {
 	padding: 19px 17px 20px 19px;
 	border-radius: 5px;
 
 	background-color: #f8f7f4;
-	z-index: 2;
+	z-index: 4;
 	box-shadow:	0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -543,18 +561,26 @@ li.sub-menu-new span:hover {
 	background-image: url('../img/cart-active.svg');
 }
 
-.cart:hover .popup-cart {
+.cart:hover .cart-wrapper {
 	display: block;
 }
 
 /* Всплывающая корзина */
 
-.popup-cart {
+.cart-wrapper {
 	display: none;
 	position: absolute;
-	top: 36px;
+	z-index: 3;
+	top: 26px;
 	right: 0px;
 
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.popup-cart {
 	padding: 20px 15px;
 	border-radius: 5px;
 	line-height: 16px;
@@ -562,7 +588,7 @@ li.sub-menu-new span:hover {
 	box-sizing: border-box;
 
 	background-color: #f8f7f4;
-	z-index: 2;
+	z-index: 4;
 	box-shadow:	0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -675,8 +701,9 @@ p.cart-amount {
 .header-contacts {
 	position: absolute;
 	top: 63px;
-	text-align: right;
+	z-index: 2;
 
+	text-align: right;
 	font-size: 14px;
 	font-weight: bold;
 }
