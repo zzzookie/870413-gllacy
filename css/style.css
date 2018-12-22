@@ -1,47 +1,3 @@
-/*@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/roboto.woff") format("woff");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotobold.woff") format("woff");
-	font-style: normal;
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotomedium.woff") format("woff");
-	font-style: normal;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/roboto.woff2") format("woff2");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotobold.woff2") format("woff2");
-	font-style: normal;
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/robotomedium.woff2") format("woff2");
-	font-style: normal;
-	font-weight: 500;
-}*/
-
-
-
 body {
 	color: #ffffff;
 	font-size: 16px;
@@ -168,11 +124,6 @@ a.button {
   color: #ffffff;
 }
 
-/* временное скрытие */
-.modal {
-	display: none;
-}
-
 .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/background-icecream-1.png");
@@ -215,7 +166,7 @@ header {
 	margin-right: 2px;
 
 	position: relative;
-	bottom: 5px;
+	bottom: 3px;
 }
 
 .site-navigation-item > a {
@@ -398,7 +349,7 @@ li.sub-menu-new a {
 
 .user-navigation > div:nth-child(-n+3) {
 	position: relative;
-	bottom: 5px;
+	bottom: 3px;
 	margin-left: 8px;
 }
 
@@ -703,7 +654,7 @@ p.cart-sum {
 
 .header-contacts {
 	position: absolute;
-	top: 63px;
+	top: 64px;
 	z-index: 2;
 
 	text-align: right;
@@ -807,7 +758,7 @@ label[for^="product-"]:active {
 			url("../img/background-icecream-1.png"),
 			radial-gradient(circle 525px at center 360px, rgba(205, 244, 223, 1), rgba(255, 255, 255, 0));
 	background-position:
-			50% 80px,
+			50% 82px,
 			50% 0px;
 }
 
@@ -817,7 +768,7 @@ label[for^="product-"]:active {
 			url("../img/background-icecream-2.png"),
 			radial-gradient(circle 525px at center 360px, rgba(192, 211, 226, 1), rgba(255, 255, 255, 0));
 	background-position:
-			50% 80px,
+			50% 82px,
 			50% 0px;
 }
 
@@ -827,7 +778,7 @@ label[for^="product-"]:active {
 			url("../img/background-icecream-3.png"),
 			radial-gradient(circle 525px at center 360px, rgba(225, 206, 198, 1), rgba(255, 255, 255, 0));
 	background-position:
-			50% 80px,
+			50% 82px,
 			50% 0px;
 }
 
@@ -924,8 +875,18 @@ label[for^="product-"]:active {
 	background-image: url("../img/banner-raspberry.jpg");
 }
 
+.raspberry button {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
 .chocolate {
 	background-image: url("../img/banner-chocolate.jpg");
+}
+
+.chocolate button {
+    padding-left: 21px;
+    padding-right: 21px;
 }
 
 .button-container {
@@ -937,29 +898,25 @@ label[for^="product-"]:active {
 
 /* Фильтр */
 
-.filter fieldset {
-	border: none;
-}
-
 .filters-first-line {
 	display: flex;
 }
 
-.filters-first-line div {
+.filters-first-line > div {
 	margin-top: 27px;
 	margin-right: 15px;
 	margin-bottom: 16px;
 }
 
-.filter-price {
-	width: 220px;	/* ВРЕМЕННО */
-}
+/*.filter-price {
+	width: 220px;	
+}*/
 
 .filter .legend {
 	display: block;
 	font-size: 14px;
 	margin-bottom: 6px;
-	margin-left: 15px;
+	margin-left: 16px;
 }
 
 .filter select {
@@ -988,6 +945,7 @@ label[for^="product-"]:active {
 	font-size: 16px;
 
 	border-radius: 20px;
+	border: none;
 	padding-top: 9px;
 	padding-bottom: 9px;
 	padding-left: 14px;
@@ -1111,6 +1069,65 @@ label[for^="product-"]:active {
 	padding-right: 29px;
 }
 
+/* Ценовой фильтр */
+
+.price-controls {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	border-radius: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 21px;
+	padding-right: 21px;
+
+	overflow: hidden;
+}
+
+.scale {
+	height: 4px;
+	width: 176px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bar {
+	height: 4px;
+	width: 107px;
+	background-color: #ffffff;
+	margin-left: 16px;
+}
+
+.toggle {
+	position: absolute;
+	top: 8px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid white;
+	background: #ababab;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.min-toggle {
+	left: 34px;
+}
+
+.max-toggle {
+	left: 132px;
+}
+
+/*.price-controls {
+	width: 55px;
+	padding: 8px 10px;
+	margin-left: 10px;
+	border: none;
+	background: #34495e;
+	font-size: 16px;
+	text-align: center;
+	color: #283136;
+	border-radius: 5px;
+	color: white;
+}*/
 
 /* Каталог */
 
@@ -1222,6 +1239,7 @@ label[for^="product-"]:active {
 
 .advantages {
 	color: #323232;
+	padding-bottom: 10px;
 
 	background-image: url("../img/banner-wafle.jpg");
 }
@@ -1315,23 +1333,45 @@ label[for^="product-"]:active {
 }
 
 .subscription {
-	padding: 18px 26px;
-	color: #5a5a5a;
-
-	background-image: url("../img/banner-postcard-temporary.jpg");
-}
-
-.subscription p {
-	line-height: 22px;
-}
-
-.subscription form {
 	display: flex;
-	align-items: flex-end;
+	padding: 0;
+	background: repeating-linear-gradient(
+		-45deg,
+		#f8f7f4 0px, #f8f7f4 2px,
+	  #fe9e90 2px, #fe9e90 9px,
+		#f8f7f4 9px, #f8f7f4 16px,
+		#92cdff 16px, #92cdff 23px,
+		#f8f7f4 23px,#f8f7f4 28px);
+}
+
+.subscription-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	color: #5a5a5a;
+	background-color: #f8f7f4;
+	border-radius: 9px;
+
+	margin: 6px;
+	padding: 12px 20px;
+}
+
+.subscription-inner p {
+	line-height: 22px;
+	margin-bottom: 0;
+}
+
+.subscription-form {
+	flex-grow: 1;
+}
+
+.subscription-inner form {
+	display: flex;
+	align-items: flex-start;
 	margin-top: 35px;
 }
 
-.subscription input[type="text"] {
+.subscription-inner input[type="text"] {
 	flex-grow: 1;
 	margin-right: 12px;
 }
