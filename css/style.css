@@ -1002,6 +1002,8 @@ label[for^="product-"]:active {
 	position: relative;
 }
 
+/* стилизация радио-кнопок */
+
 .filter-fat input[type="radio"]:checked + label::before, 
 .filter-fat input[type="radio"]:not(:checked) + label::before {
 	content: "";
@@ -1032,6 +1034,38 @@ label[for^="product-"]:active {
 	opacity: 0;
 }
 
+.filter-fat input[type="radio"]:checked:hover + label::before, 
+.filter-fat input[type="radio"]:not(:checked):hover + label::before {
+	border: 3px solid rgba(255, 255, 255, 1);	
+}
+
+.filter-fat input[type="radio"]:checked:hover + label::after {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/* стилизация чекбоксов */
+
+.filter-fillers input[type="checkbox"]:checked + label {
+	background-repeat: no-repeat;
+	background-size: 23px 19px;
+	background-image: url("../img/checkbox-on.svg");
+	background-position: 0px 0px;
+	opacity: 0.8;
+}
+
+.filter-fillers input[type="checkbox"]:not(:checked) + label {
+	background-repeat: no-repeat;
+	background-size: 19px 19px;
+	background-image: url("../img/checkbox-off.svg");
+	background-position: 0px 0px;
+	background: 0.8;
+}
+
+.filter-fillers input[type="checkbox"]:hover + label {
+	opacity: 1;
+}
+
+
 .filter-fillers {
 	margin-bottom: 40px;
 }
@@ -1046,6 +1080,7 @@ label[for^="product-"]:active {
 	background-color: rgba(255, 255, 255, 0.2);
 	color: #ffffff;
 	font-size: 16px;
+	font-weight: 500;
 	border: 2px solid #ffffff;
 	border-radius: 20px;
 
@@ -1053,7 +1088,28 @@ label[for^="product-"]:active {
 	padding-bottom: 7px;
 	padding-left: 27px;
 	padding-right: 27px;
+
+	cursor: pointer;
+	outline: none;
 }
+
+.filter-fillers input[type="submit"]:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: #323232;
+}
+
+.filter-fillers input[type="submit"]:active {
+	background-color: rgba(237, 237, 237, 1);
+	color: #323232;
+	box-shadow: inset 0px 2px 1px 0px #696969;
+	border: none;
+
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 29px;
+	padding-right: 29px;
+}
+
 
 /* Каталог */
 
