@@ -5,7 +5,7 @@ var background = document.querySelector(".modal-background");
 var close = popup.querySelector(".modal-close");
 var backgroundClose = document.querySelector(".modal-background-close");
 
-var form = document.querySelector("form");
+var form = document.querySelector("[name=login-form]");
 var login = document.querySelector("[name=login]");
 var password = document.querySelector("[name=password]");
 

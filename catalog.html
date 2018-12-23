@@ -19,14 +19,12 @@
               <li class="site-navigation-item site-navigation-current">
                 <a href="catalog.html"><span>Каталог</span></a>
 
-                <ul class="sub-menu-wrapper">
-                  <div class="sub-menu">
-                    <li class="sub-menu-new"><a href="#">Новинки</a></li>
-                    <li class="sub-menu-current"><a href="catalog.html"><span>Сливочное</span></a></li>
-                    <li><a href="#">Щербеты</a></li>
-                    <li><a href="#">Фруктовый лед</a></li>
-                    <li><a href="#">Мелорин</a></li>
-                  </div>
+                <ul class="sub-menu">
+                  <li class="sub-menu-new"><a href="#">Новинки</a></li>
+                  <li class="sub-menu-current"><a href="catalog.html"><span>Сливочное</span></a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
                 </ul>
               </li>
 
@@ -44,9 +42,10 @@
 
                 <div class="search-wrapper">
                   <div class="popup popup-search">
-                    <form action="search.php" method="post">
+                    <form action="https://echo.htmlacademy.ru" method="post">
                       <input type="text" name="search" id="search" placeholder="Что ищем?">
                       <label class="visually-hidden" for="search">Поле поиска</label>
+                      <button class="visually-hidden">Отправить</button>
                     </form>
                   </div>
                 </div>
@@ -57,7 +56,7 @@
 
                 <div class="login-wrapper">
                   <div class="popup popup-login">
-                    <form action="login.php" method="post">
+                    <form name="login-form" action="https://echo.htmlacademy.ru" method="post">
                       <input type="text" name="login" placeholder="Электронная почта" id="login">
                       <label class="visually-hidden" for="login">Электронная почта</label>
                       <input type="password" name="password" placeholder="Пароль" id="password">
@@ -87,7 +86,7 @@
                           </button>
                         </li>
                         <li class="cart-image">
-                          <a href="#"><img src="img/cart-item-01.jpg" height="33" width="33"></a>
+                          <a href="#"><img src="img/cart-item-01.jpg" height="33" width="33" alt="Пломбир с апельсиновым джемом (уменьшенное изображение)"></a>
                         </li>
                         <li class="cart-item">
                           <p><a href="#">Пломбир с апельсиновым джемом</a></p>
@@ -106,7 +105,7 @@
                           </button>
                         </li>
                         <li class="cart-image">
-                          <a href="#"><img src="img/cart-item-02.jpg" height="33" width="33"></a>
+                          <a href="#"><img src="img/cart-item-02.jpg" height="33" width="33" alt="Клубничный пломбир с присыпкой из белого шоколада (уменьшенное изображение)"></a>
                         </li>
                         <li class="cart-item">
                           <p><a href="#">Клубничный пломбир с присыпкой
@@ -153,7 +152,8 @@
       <h1 class="page-title">Сливочное мороженое</h1>
 
       <section class="filter">
-        <form>
+        <h2 class="visually-hidden">Фильтр каталога</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <div class="filters-first-line">
             <div class="filter-sort">
               <span class="legend">Сортировка:</span>
@@ -407,11 +407,12 @@
           <a href="#">
             <li class="next-page">
               <span class="visually-hidden">Следующая страница</span>    
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve">
                 <path fill="#FFFFFF" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15
                 c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509
                 C7.436,6.16,7.436,5.84,7.237,5.642z"/>
+              </svg>
             </li>
           </a>
         </ul>
