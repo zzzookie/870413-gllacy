@@ -1153,35 +1153,43 @@ select[name=sort] option {
 
 /* стилизация чекбоксов */
 
-.filter-fillers input[type="checkbox"]:checked + label {
-	background-repeat: no-repeat;
-	background-size: 23px 19px;
-	background-image: url("../img/checkbox-on.svg");
-	background-position: 0px 0px;
-	opacity: 0.8;
-}
-
-.filter-fillers input[type="checkbox"]:not(:checked) + label {
-	background-repeat: no-repeat;
-	background-size: 19px 19px;
-	background-image: url("../img/checkbox-off.svg");
-	background-position: 0px 0px;
-	opacity: 0.8;
-}
-
-.filter-fillers input[type="checkbox"]:hover + label {
-	opacity: 1;
-}
-
-
 .filter-fillers {
 	margin-bottom: 40px;
 }
 
 .filter-fillers label {
+	position: relative;
 	padding-left: 32px;
 	margin-right: 18px;
 	cursor: pointer;
+}
+
+.filter-fillers label::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -1px;
+	width: 23px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity: 0.8;
+
+}
+
+.filter-fillers input[type="checkbox"]:checked + label::before {
+	background-size: 23px 19px;
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-fillers input[type="checkbox"]:not(:checked) + label::before {
+	background-size: 19px 19px;
+	background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-fillers input[type="checkbox"]:hover + label::before,
+.filter-fillers input[type="checkbox"]:focus + label::before {
+	opacity: 1;
 }
 
 .filter-fillers input[type="submit"] {
@@ -1648,7 +1656,7 @@ select[name=sort] option {
 	padding-bottom: 0px;
 }
 
-#map-address {
+.map-address {
 	margin-bottom: 18px;
 }
 
@@ -1782,7 +1790,10 @@ li.current-page,
 	margin-right: 7px;
 }
 
-.social:hover,
+.social:hover {
+	opacity: 1;
+}
+
 .social:focus {
 	opacity: 1;
 }
