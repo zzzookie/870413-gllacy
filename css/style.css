@@ -185,7 +185,7 @@ a.button {
 /* HEADER */
 
 header {
-	margin-bottom: 22px;
+	margin-bottom: -5px;
 	padding-top: 7px;
 }
 
@@ -391,21 +391,17 @@ li.sub-menu-new a {
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
 }
+	 
 
-.user-navigation-container {
+.user-navigation {
 	position: relative;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
 	max-width: 300px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
+	margin-left: auto;
 
-.user-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -414,7 +410,7 @@ li.sub-menu-new a {
 	        justify-content: flex-end;
 }
 
-.user-navigation > div:nth-child(-n+3) {
+.user-navigation > div {
 	position: relative;
 	bottom: 3px;
 	margin-left: 8px;
@@ -436,6 +432,7 @@ li.sub-menu-new a {
 
 .search {
 	width: 33px;
+	height: 33px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	padding-left: 0px;
@@ -739,28 +736,28 @@ p.cart-sum {
 
 /*******************/
 
-.header-contacts {
-	position: absolute;
-	top: 64px;
-	z-index: 2;
-
-	text-align: right;
-	font-size: 14px;
-	font-weight: bold;
+.breadcrumbs-and-contacts {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 }
 
-.header-contacts p {
+.contacts {
+	text-align: right;
+}
+
+.contacts p {
 	font-size: 14px;
 	font-weight: bold;
 
 	margin: 0;
 }
 
-.header-contacts p:first-child {
+.contacts p:first-child {
 	margin-bottom: 6px;
 }
 
-.header-contacts b {
+.contacts b {
 	font-size: 22px;
 	line-height: 22px;
 	font-weight: bold;
@@ -790,6 +787,7 @@ p.cart-sum {
 
 .breadcrumbs {
 	font-size: 14px;
+	margin-top: 28px;
 	margin-bottom: 4px;
 }
 
@@ -809,7 +807,7 @@ section.slider {
 	width: 100%;
   position: relative;
   
-  padding-top: 294px;
+  padding-top: 278px;
   margin-bottom: 41px;
 }
 
@@ -1346,7 +1344,7 @@ select[name=sort] option {
 	z-index: 10;
 
 	position: absolute;
-	top: 208px;
+	top: 206px;
 	left: -2px;
 }
 
@@ -1567,6 +1565,7 @@ select[name=sort] option {
 
 	margin: 6px;
 	padding: 12px 20px;
+	width: 548px;
 }
 
 .subscription-inner p {
@@ -1681,7 +1680,7 @@ div.address-block strong {
 }
 
 .inner-page main {
-	padding-bottom: 29px;
+	padding-bottom: 27px;
 }
 
 .inner-page .footer-wrap {
@@ -1701,54 +1700,54 @@ div.address-block strong {
 	margin-left: auto;
 }
 
-.paginator-item {
+.paginator-item a {
+	display: block;
 	margin-left: 3px;
-	width: 26px;
-	height: 26px;
-	line-height: 26px;	
+
+	padding-left: 8.5px;
+	padding-right: 8.5px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	color: #ffffff;
 	text-align: center;
 
 	border-radius: 50%;
-}
-
-.paginator a {
-	border-bottom: none;
-	color: #ffffff;
-}
-
-.paginator a:hover,
-.paginator a:active {
-	color: #ffffff;
-}
-
-.paginator-item {
-	font-size: 16px;
-	font-weight: 500;
 }
 
 li.previous-page {
 	-webkit-transform: scale(-1, 1);
 	    -ms-transform: scale(-1, 1);
 	        transform: scale(-1, 1);
-	margin-right: 13px;
-	height: 26px;
+}
+
+li.previous-page a {
+	margin-left: 13px;
 	line-height: 28px;
 }
 
-li.next-page {
-	margin-left: 16px;
-	height: 26px;
+li.next-page a {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5px;
+	margin-right: -9px;
 	line-height: 28px;
 }
 
-.paginator-item:hover {
+.paginator-item a:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-li.current-page,
-.paginator-item:active {
+li.current-page a,
+li.current-page a:hover,
+.paginator-item a:active {
 	color: #323232;
 	background-color: #ffffff;
+}
+
+li.current-page a:hover {
+	cursor: default;
 }
 
 .paginator-inactive path {
