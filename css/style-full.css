@@ -1677,6 +1677,10 @@ div.address-block strong {
 	margin-bottom: 3px;
 }
 
+.map iframe {
+	border: 0px;
+}
+
 /* Внутренняя страница */
 
 .inner-page h1 {
