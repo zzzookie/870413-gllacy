@@ -1341,7 +1341,7 @@ label[for^="product-"]:active {
 	  #fe9e90 2px, #fe9e90 9px,
 		#f8f7f4 9px, #f8f7f4 16px,
 		#92cdff 16px, #92cdff 23px,
-		#f8f7f4 23px,#f8f7f4 28px);
+		#f8f7f4 23px, #f8f7f4 28px);
 }
 
 .subscription-inner {
@@ -1437,7 +1437,7 @@ div.address-block strong {
 }
 
 .map-phone {
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 }
 
 /* Внутренняя страница */
@@ -1599,17 +1599,18 @@ li.current-page,
 
 .copyright {
 	margin-left: auto;
-	padding-top: 46px;
 	font-size: 12px;
-
-	background-image: url("../img/logo-htmlacademy.svg");
-	background-repeat: no-repeat;
-	background-size: 120px 36px;
-	background-position: -7px 0px;
 }
 
+.copyright img {
+	margin-left: 3px;
+}
 
-/* Модальное окна */
+.copyright p {
+	margin-top: 6px;
+}
+
+/* Модальное окно */
 
 .modal-background {
 	display: none;
