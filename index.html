@@ -15,7 +15,7 @@
 
     <div class="site-wrapper">
 
-      <header>
+      <header class="main-header">
         <div class="container">
           <div class="main-navigation">
             <nav class="logo-and-navigation">
@@ -48,7 +48,7 @@
                 <div class="search-wrapper">
                   <div class="popup popup-search">
                     <form action="https://echo.htmlacademy.ru" method="post">
-                      <input type="text" name="search" id="search" placeholder="Что ищем?">
+                      <input class="textfield" type="text" name="search" id="search" placeholder="Что ищем?">
                       <label class="visually-hidden" for="search">Поле поиска</label>
                       <button class="visually-hidden">Отправить</button>
                     </form>
@@ -62,9 +62,9 @@
                 <div class="login-wrapper">
                   <div class="popup popup-login">
                     <form name="login-form" action="https://echo.htmlacademy.ru" method="post">
-                      <input type="text" name="login" placeholder="Электронная почта" id="login">
+                      <input class="textfield" type="text" name="login" placeholder="Электронная почта" id="login">
                       <label class="visually-hidden" for="login">Электронная почта</label>
-                      <input type="password" name="password" placeholder="Пароль" id="password">
+                      <input class="textfield" type="password" name="password" placeholder="Пароль" id="password">
                       <label class="visually-hidden" for="password">Пароль</label>
                       <div class="login-links">
                         <button class="button" type="submit" name="submit" value="Войти">Войти</button>
@@ -219,7 +219,7 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <div class="subscription-form">
                   <form action="https://echo.htmlacademy.ru" method="post">
-                    <input type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
+                    <input class="textfield" type="text" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
                     <label class="visually-hidden" for="subscription-email">Электронная почта</label>
                     <button class="button" type="submit" name="subscription-submit" value="Отправить">Отправить</button>
                   </form>
@@ -254,7 +254,7 @@
               </p>
               <p class="map-phone">(с 10 до 20 ежедневно)</p>
             </div>
-            <button class="button feedback-link">Форма обратной связи</button>
+            <a class="button feedback-link" href="#">Форма обратной связи</a>
           </div>
         </section>
 
@@ -311,11 +311,11 @@
       <h2 class="visually-hidden">Обратная связь</h2>
       <p><b>Мы обязательно вам ответим!</b></p>    
       <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+        <input class="textfield" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+        <input class="textfield" type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
         <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
-        <textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+        <textarea class="textfield" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
         <p class="modal-feedback-button">
           <button class="button" type="submit" name="feedback-submit" value="Отправить">Отправить</button>
         </p>
