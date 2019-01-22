@@ -62,7 +62,7 @@
                 <div class="login-wrapper">
                   <div class="popup popup-login">
                     <form name="login-form" action="https://echo.htmlacademy.ru" method="post">
-                      <input class="textfield" type="text" name="login" placeholder="Электронная почта" id="login">
+                      <input class="textfield" type="email" name="login" placeholder="Электронная почта" id="login">
                       <label class="visually-hidden" for="login">Электронная почта</label>
                       <input class="textfield" type="password" name="password" placeholder="Пароль" id="password">
                       <label class="visually-hidden" for="password">Пароль</label>
@@ -77,7 +77,6 @@
                   </div>
                 </div>
               </div>
-
 
               <div class="user-menu cart cart-empty">
                 <span>Пусто</span>
@@ -231,7 +230,6 @@
 
         <section class="map">
           <h2 class="visually-hidden">Карта проезда</h2>
-          <!-- <img src="img/map.jpg" width="1200" height="430" alt="Карта проезда"> -->
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef44b413e64ff92bd4756aed0248d70e4221b8ef2789f6d79da3912a26f4ec3&amp;source=constructor" width="1200" height="430"></iframe>
           <div class="address-block">
             <div class="address-block-text">
@@ -310,10 +308,10 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <p><b>Мы обязательно вам ответим!</b></p>    
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
         <input class="textfield" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-        <input class="textfield" type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+        <input class="textfield" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
         <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
         <textarea class="textfield" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
         <p class="modal-feedback-button">
